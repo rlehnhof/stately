@@ -2,14 +2,21 @@
 *************************************/
 @font-face {
   font-family: 'stately-webfont';
-  src: url("../font/stately-webfont.eot");
-  src: url("../font/stately-webfont.eot?#iefix") format("embedded-opentype"), url("../font/stately-webfont.woff") format("woff"), url("../font/stately-webfont.ttf") format("truetype"), url("../font/stately-webfont.svg#testfontRegular") format("svg");
+  src: url("../font/usa/stately-webfont.eot");
+  src: url("../font/usa/stately-webfont.eot?#iefix") format("embedded-opentype"), url("../font/usa/stately-webfont.woff") format("woff"), url("../font/usa/stately-webfont.ttf") format("truetype"), url("../font/usa/stately-webfont.svg#testfontRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'germany-webfont';
+  src: url("../font/germany/germany-webfont.eot");
+  src: url("../font/germany/germany-webfont.eot?#iefix") format("embedded-opentype"), url("../font/germany/germany-webfont.woff") format("woff"), url("../font/germany/germany-webfont.ttf") format("truetype"), url("../font/germany/germany-webfont.svg#testfontRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 .stately {
-  font: normal normal 300px/100% "stately-webfont";
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -26,9 +33,9 @@
   padding: 0;
   list-style: none;
 }
+
 .stately li {
   float: left;
-  margin: -20% 0 0 -100%;
   position: relative;
   left: 101%;
   width: 100%;
@@ -42,8 +49,26 @@
   user-select: none;
 }
 
+.usa {
+  font: normal normal 300px/100% "stately-webfont";
+}
+
+.usa li {
+  margin: -20% 0 0 -100%;
+}
+
+.germany {
+  font: normal normal 300px/100% "germany-webfont";
+  height: 370px;
+}
+ 
+ .germany li {
+	margin: 12% 0 0 -100%;
+}
+  
 /** Style customizations
 *************************************/
+
 .stately {
   background: #f2f2f2;
   padding: 20px;
@@ -124,4 +149,22 @@
 #presidents .pa,
 #presidents .sc {
   color: #ff8b3e;
+}
+
+#college {
+  color: #b0b0b0;
+}
+
+#college .bavaria,
+#college .lower_saxony{
+  color: #A75555;
+}
+
+#church {
+  color: #A75555;
+}
+
+#church .berlin,
+#church .brandenburg{
+  color: #b0b0b0;
 }

@@ -1,19 +1,18 @@
 #Stately
-Stately is a symbol font that makes is easy to create a map of the United States using only HTML and CSS. Each state can be styled independently with CSS for making simple visualizations. And since it's a font, it scales bigger and smaller while staying sharp as a tack.
+Stately is a symbol font that makes it easy to create a map of any country using only HTML and CSS. Each state of a country can be styled independently with CSS for making simple visualizations. And since it's a font, it scales bigger and smaller while staying sharp as a tack. Feel free to add a country of choice.
 
 ##Files
-    map.svg      - SVG map used to create the font
+    map_[insert country].svg      - SVG map used to create the font
     assets\font  - Folder containing the web-font files
     assets\sass  - Folder containing basic Sass files, including both Stately setup and stately.html demo customizations
     assets\css   - Folder containing compiled CSS files
     stately.html - Basic Demo
     stately.svg  - SVG font file
     stately.ttf  - TrueType font file
-    
 
 ##What is Stately?
 Each state is a glyph within the font. Each state is positioned and sized relative to the the rest of the states, so that when each character is stacked on top of one another, it creates a full map.
-The pertinent characters are uppercase A-Z and lowercase a-z with lowercase y generating the District of Columbia and lowercase z generating a full US map.
+The pertinent characters for the US are uppercase A-Z and lowercase a-z with lowercase y generating the District of Columbia and lowercase z generating a full US map.
 For modern browsers ligatures are available and a state's abbreviation is its ligature. For example, "va" generates the glyph of the state of Virginia and 'dc' the District of Columbia. Additionally, the ligature "usa" produces a character of the full US map.
 
 ##Basic Use Case
@@ -91,6 +90,8 @@ Set the size and base map color in your CSS:
     color: #f0f0f0;
 }
 ```
+
+
     
 Style Individual State:
 
@@ -123,6 +124,11 @@ Ben Markowitz
 
 Intridea  
 [website](http://www.intridea.com)  
+
+Germany webfont created by Roman Lehnhof.
+[website](http:/www.lehnhof.net)
+
+Map of Germany based on [Wikimedia file] (http://de.wikipedia.org/wiki/Datei:Germany_location_map.svg).
 
 ##License
 

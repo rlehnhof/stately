@@ -1,17 +1,28 @@
 @font-face {
     font-family: 'stately-webfont';
-    src: url('../font/stately-webfont.eot');
-    src: url('../font/stately-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/stately-webfont.woff') format('woff'),
-         url('../font/stately-webfont.ttf') format('truetype'),
-         url('../font/stately-webfont.svg#testfontRegular') format('svg');
+    src: url('../font/usa/stately-webfont.eot');
+    src: url('../font/usa/stately-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/usa/stately-webfont.woff') format('woff'),
+         url('../font/usa/stately-webfont.ttf') format('truetype'),
+         url('../font/usa/stately-webfont.svg#testfontRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'germany-webfont';
+    src: url('../font/germany/germany-webfont.eot');
+    src: url('../font/germany/germany-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/germany/germany-webfont.woff') format('woff'),
+         url('../font/germany/germany-webfont.ttf') format('truetype'),
+         url('../font/germany/germany-webfont.svg#testfontRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
 .stately {
-  font: normal normal 300px/100% "stately-webfont";
 	font-size-adjust: none;
 	-webkit-text-rendering: optimizeLegibility;
 	   -moz-text-rendering: optimizeLegibility;
@@ -30,7 +41,6 @@
 	
 	li { 
   	float: left;
-  	margin: -20% 0 0 -100%;
   	position: relative;
   	left: 101%;
   	width: 100%;
@@ -45,3 +55,20 @@
   }
   
 } // .stately
+
+.usa {
+	  font: normal normal 300px/100% "stately-webfont";
+	  
+	  li {
+	  margin: -20% 0 0 -100%;
+  }
+} // .usa
+
+.germany {
+	  font: normal normal 300px/100% "germany-webfont";
+	  height: 370px;
+	  
+	  li {
+	  margin: 12% 0 0 -100%;
+  }
+} // .germany
